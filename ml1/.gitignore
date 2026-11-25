@@ -1,0 +1,34 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Data (regenerated)
+data/chunks/
+data/manifests/
+data/reports/
+data/calibration/
+
+# Models (downloaded separately)
+config/vmaf_models/*.pkl
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Debug artifacts
+*.mbtree
+phase*.txt
+pipeline_out*.txt
+test_*.txt
+test_*.json
+temp_*.json
+check_*.py
+vmaf_out.json
+vmaf_test.*

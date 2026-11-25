@@ -1,0 +1,6 @@
+# VMAF Configuration
+model_dir: "config/vmaf_models"
+tv_model: "vmaf_v0.6.1.pkl"
+phone_model: "vmaf_v0.6.1_phone.pkl"
+neg_model: "vmaf_v0.6.1_neg.pkl"
+display_resolution: "1920x1080"

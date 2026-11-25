@@ -1,0 +1,15 @@
+# ML1 Pipeline Configuration
+input_dir: "data/input"
+chunks_dir: "data/chunks"
+manifests_dir: "data/manifests"
+reports_dir: "data/reports"
+calibration_dir: "data/calibration"
+
+# Video processing
+target_fps: 30
+target_resolution: "1920x1080"
+target_pix_fmt: "yuv420p"
+chunk_duration_s: 2.0
+
+# Parallelism (null = auto-detect via os.cpu_count())
+max_workers: null

@@ -1,0 +1,5 @@
+# Feature Extraction Parameters
+downscale_resolution: "640x360"
+calibration_percentiles: [5, 95]
+motion_weight: 0.6
+complexity_weight: 0.4

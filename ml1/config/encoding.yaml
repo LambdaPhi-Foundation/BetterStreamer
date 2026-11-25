@@ -1,0 +1,65 @@
+# Encoding Ladder & Chunking Parameters
+chunk_duration_s: 2.0
+fps: 30
+gop_size: 60
+keyint_min: 60
+sc_threshold: 0
+
+video_ladder:
+  - rung: 0
+    resolution: "640x360"
+    target_kbps: 400
+    maxrate_kbps: 440
+    bufsize_kbps: 800
+    profile: "main"
+    level: "3.0"
+    preset: "superfast"
+  - rung: 1
+    resolution: "854x480"
+    target_kbps: 800
+    maxrate_kbps: 880
+    bufsize_kbps: 1600
+    profile: "main"
+    level: "3.1"
+    preset: "veryfast"
+  - rung: 2
+    resolution: "1280x720"
+    target_kbps: 1500
+    maxrate_kbps: 1650
+    bufsize_kbps: 3000
+    profile: "high"
+    level: "3.2"
+    preset: "veryfast"
+  - rung: 3
+    resolution: "1920x1080"
+    target_kbps: 3000
+    maxrate_kbps: 3300
+    bufsize_kbps: 6000
+    profile: "high"
+    level: "4.0"
+    preset: "veryfast"
+  - rung: 4
+    resolution: "1920x1080"
+    target_kbps: 6000
+    maxrate_kbps: 6600
+    bufsize_kbps: 12000
+    profile: "high"
+    level: "4.1"
+    preset: "veryfast"
+
+audio_ladder:
+  - rung: 0
+    bitrate_kbps: 24
+  - rung: 1
+    bitrate_kbps: 48
+  - rung: 2
+    bitrate_kbps: 64
+  - rung: 3
+    bitrate_kbps: 96
+  - rung: 4
+    bitrate_kbps: 128
+
+audio_codec: "libopus"
+audio_chunk_duration_s: 2.0
+
+use_2pass: true
